@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You ❤️</title>
+
+  
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background: radial-gradient(circle at center, #ffb6c1, #ff6f91, #cc1e4a);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .big-heart {
+    font-size: 120px;
+    animation: pulse 1s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+  }
+
+  .floating-heart {
+    position: absolute;
+    bottom: -50px;
+    font-size: 24px;
+    animation: floatUp 6s linear infinite;
+  }
+
+  @keyframes floatUp {
+    0% { transform: translateY(0) scale(1) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(-110vh) scale(1.5) rotate(360deg); opacity: 0; }
+  }
+
+  .text {
+    margin-top: 15px;
+    font-size: 34px;
+    color: white;
+    font-weight: bold;
+    font-family: 'UnifrakturCook', cursive;
+    text-shadow: 0 0 12px #ffccd5, 0 0 20px #ff99aa;
+  }
+</style>
+
+  
+</head>
+
+  
+<body>
+
+<div class="big-heart">❤️</div>
+<div class="text">A gift for you 😉</div>
+
+<!-- Floating mini hearts -->
+<span class="floating-heart" style="left:10%; animation-delay: 0s;">💖</span>
+<span class="floating-heart" style="left:25%; animation-delay: 2s;">💕</span>
+<span class="floating-heart" style="left:40%; animation-delay: 4s;">💗</span>
+<span class="floating-heart" style="left:60%; animation-delay: 1s;">💓</span>
+<span class="floating-heart" style="left:80%; animation-delay: 3s;">💘</span>
+
+</body>
+</html>
