@@ -22,6 +22,7 @@
   .big-heart {
     font-size: 120px;
     animation: pulse 1s infinite;
+    cursor: pointer;
   }
 
   @keyframes pulse {
@@ -57,15 +58,21 @@
   
 <body>
 
-<div class="big-heart">❤️</div>
+<div id="big-heart">❤️</div>
 <div class="text">A gift for you 😉</div>
 
-<!-- Floating mini hearts -->
+
 <span class="floating-heart" style="left:10%; animation-delay: 0s;">💖</span>
 <span class="floating-heart" style="left:25%; animation-delay: 2s;">💕</span>
 <span class="floating-heart" style="left:40%; animation-delay: 4s;">💗</span>
 <span class="floating-heart" style="left:60%; animation-delay: 1s;">💓</span>
 <span class="floating-heart" style="left:80%; animation-delay: 3s;">💘</span>
+
+<script>
+  document.getElementById('big-heart').addEventListener('click', function() {
+    window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+  });
+</script>
 
 </body>
 </html>
